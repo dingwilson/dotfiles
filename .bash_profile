@@ -17,3 +17,10 @@ alias cdhd="cd '/Volumes/Macintosh HD'"
 # Website Aliases
 alias fb="open https://www.facebook.com"
 alias gh="open https://github.com/dingwilson"
+
+# Recursively delete `.DS_Store` files
+alias cleanup="find . -type f -name '*.DS_Store' -ls -delete"
+
+# Show/hide hidden files in Finder
+alias showfiles="defaults write com.apple.finder AppleShowAllFiles -bool true && killall Finder"
+alias hidefiles="defaults write com.apple.finder AppleShowAllFiles -bool false && killall Finder"
