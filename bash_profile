@@ -18,8 +18,11 @@ alias cdhd="cd '/Volumes/Macintosh HD'"
 alias fb="open https://www.facebook.com"
 alias gh="open https://github.com/dingwilson"
 
+# Homebrew Aliases
+alias hu="brew update && brew upgrade --all && brew cleanup && brew prune"
+
 # Recursively delete `.DS_Store` files
-alias cleanup="find . -type f -name '*.DS_Store' -ls -delete"
+alias cleanup="find . -type f -name '*.DS_Store' -ls -delete; rm -rf ~/Documents/ViberDownloads/"
 
 # Show/hide hidden files in Finder
 alias showfiles="defaults write com.apple.finder AppleShowAllFiles -bool true && killall Finder"

@@ -4,7 +4,7 @@ echo "Setting up your Mac..."
 
 # Moving dotfiles into ~
 files="bash_profile gitconfig"
-dir=~/Documents/dotfiles
+dir=~/dotfiles
 
 for file in $files; do
     echo "Creating symlink to $file in home directory."
@@ -17,6 +17,7 @@ if test ! $(which brew); then
 fi
 
 # Update Homebrew recipes
+echo "Updating Homebrew."
 brew update
 
 # Install all our dependencies with bundle (See Brewfile)
@@ -24,4 +25,5 @@ brew tap homebrew/bundle
 brew bundle
 
 # Install Cocoapods
+echo "Installing Cocoapods."
 sudo gem install cocoapods
