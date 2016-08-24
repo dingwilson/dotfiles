@@ -19,7 +19,7 @@ alias fb="open https://www.facebook.com"
 alias gh="open https://github.com/dingwilson"
 
 # Homebrew Aliases
-alias hu="brew update && brew upgrade --all && brew cleanup && brew prune"
+alias hu="brew update && brew upgrade --all && brew cleanup"
 
 # Recursively delete `.DS_Store` files
 alias cleanup="find . -type f -name '*.DS_Store' -ls -delete; rm -rf ~/Documents/ViberDownloads/"
