@@ -21,8 +21,14 @@ echo "Updating Homebrew."
 brew update
 
 # Install all our dependencies with bundle (See Brewfile)
+echo "Tapping Homebrew Bundle"
 brew tap homebrew/bundle
+echo "Brewing bundle."
 brew bundle
+
+# Updating all ruby gems
+ech "Updating all gems.."
+sudo gem update
 
 # Install Cocoapods
 echo "Installing Cocoapods."

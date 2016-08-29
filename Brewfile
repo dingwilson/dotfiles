@@ -7,12 +7,11 @@ cask_args appdir: '/Applications'
 # Install GNU core utilities (those that come with OS X are outdated)
 brew 'coreutils'
 
-# Install Bash 4
+# Install various binaries
 brew 'bash'
-
-# Install Binaries
 brew 'git'
 brew 'python'
+brew 'vim'
 
 # Apps
 cask '1password'
