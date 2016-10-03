@@ -11,6 +11,7 @@ alias gc="git commit -m"
 alias gpm="git push origin master"
 alias gpd="git push origin develop"
 alias gpp="git push origin gh-pages"
+alias grao="git remote add origin"
 
 # CD Aliases
 alias cdsd="cd '/Volumes/ExtDrive SD'"
@@ -21,7 +22,7 @@ alias fb="open https://www.facebook.com"
 alias gh="open https://github.com/dingwilson"
 
 # Homebrew Aliases
-alias bu="brew update && brew upgrade --all && brew cleanup"
+alias bu="brew update && brew upgrade && brew cleanup"
 
 # Recursively delete `.DS_Store` files
 alias cleanup="find . -type f -name '*.DS_Store' -ls -delete; rm -rf ~/Documents/ViberDownloads/"
