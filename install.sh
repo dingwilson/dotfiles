@@ -3,7 +3,7 @@
 echo "Setting up your Mac..."
 
 # Moving dotfiles into ~
-files="bash_profile gitconfig"
+files="bash_profile zshrc gitconfig"
 dir=~/dotfiles
 
 for file in $files; do
@@ -25,6 +25,9 @@ echo "Tapping Homebrew Bundle"
 brew tap homebrew/bundle
 echo "Brewing bundle."
 brew bundle
+
+# Install Oh-My-Zsh
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
 # Updating all ruby gems
 ech "Updating all gems.."

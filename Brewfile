@@ -12,6 +12,7 @@ brew 'bash'
 brew 'git'
 brew 'python'
 brew 'vim'
+brew 'zsh'
 
 # Apps
 cask '1password'
