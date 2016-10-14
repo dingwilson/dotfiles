@@ -98,6 +98,24 @@ alias gpd="git push origin develop"
 alias gpp="git push origin gh-pages"
 alias grao="git remote add origin"
 
+createGithubRepo() {
+	CURRENTDIR=${PWD##*/}
+	GITHUBUSER=$(git config github.user)
+
+	read "REPONAME?New repo name (enter for ${PWD##*/}):"
+	read "USER?Git Username (enter for ${GITHUBUSER}):"
+	read "DESCRIPTION?Repo Description:"
+	read "PRIVATE?Private Repository?(true/false):"
+
+	echo "Creating Github Repository..."
+
+	curl -u ${USER:-${GITHUBUSER}} https://api.github.com/user/repos -d "{\"name\": \"${REPONAME:-${CURRENTDIR}}\", \"description\": \"${DESCRIPTION}\", \"private\": \"${PRIVATE}\"}"
+
+	git remote add origin git@github.com:${USER:-${GITHUBUSER}}/${REPONAME:-${CURRENTDIR}}.git
+}
+
+alias ghc=createGithubRepo
+
 # CD Aliases
 alias cdsd="cd '/Volumes/ExtDrive SD'"
 alias cdhd="cd '/Volumes/Macintosh HD'"
