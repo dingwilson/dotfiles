@@ -89,6 +89,9 @@ curl --silent http://www.brainyquote.com/quotes_of_the_day.html | grep bqPhotoDe
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+# Replace Vi with Vim
+alias vi="vim"
+
 # Git Aliases
 alias gi="git init"
 alias ga="git add ."
