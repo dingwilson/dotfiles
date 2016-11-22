@@ -100,6 +100,7 @@ alias gpm="git push origin master"
 alias gpd="git push origin develop"
 alias gpp="git push origin gh-pages"
 alias grao="git remote add origin"
+alias goops="git fetch --all&&git reset --hard origin/master"
 
 createGithubRepo() {
 	CURRENTDIR=${PWD##*/}

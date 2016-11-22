@@ -7,7 +7,6 @@ curl --silent http://www.brainyquote.com/quotes_of_the_day.html | grep bqPhotoDe
 # Map vi to vim
 alias vi="vim"
 
-
 # Git Aliases
 alias gi="git init"
 alias ga="git add ."
@@ -16,6 +15,7 @@ alias gpm="git push origin master"
 alias gpd="git push origin develop"
 alias gpp="git push origin gh-pages"
 alias grao="git remote add origin"
+alias goops="git fetch --all&&git reset --hard origin/master"
 
 createGithubRepo() {
 	CURRENTDIR=${PWD##*/}
