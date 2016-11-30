@@ -46,9 +46,12 @@ alias gh="open https://github.com/dingwilson"
 # Homebrew Aliases
 alias bu="brew update && brew upgrade && brew cleanup"
 
-# Recursively delete `.DS_Store` files
-alias cleanup="find . -type f -name '*.DS_Store' -ls -delete; rm -rf ~/Documents/ViberDownloads/"
-
 # Show/hide hidden files in Finder
 alias showfiles="defaults write com.apple.finder AppleShowAllFiles -bool true && killall Finder"
 alias hidefiles="defaults write com.apple.finder AppleShowAllFiles -bool false && killall Finder"
+
+# XCode Remove Derived Data
+alias xcdd='rm -rf ~/Library/Developer/Xcode/DerivedData/*'
+
+# Recursively delete `.DS_Store` files
+alias cleanup="find . -type f -name '*.DS_Store' -ls -delete; rm -rf ~/Documents/ViberDownloads/"
