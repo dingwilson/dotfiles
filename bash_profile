@@ -54,4 +54,4 @@ alias hidefiles="defaults write com.apple.finder AppleShowAllFiles -bool false &
 alias xcdd='rm -rf ~/Library/Developer/Xcode/DerivedData/*'
 
 # Recursively delete `.DS_Store` files
-alias cleanup="find . -type f -name '*.DS_Store' -ls -delete; rm -rf ~/Documents/ViberDownloads/"
+alias cleanup="find . -type f -name '*.DS_Store' -ls -delete"
