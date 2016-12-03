@@ -3,7 +3,7 @@
 echo "Setting up your Mac..."
 
 # Moving dotfiles into ~
-files="bash_profile zshrc gitconfig"
+files="bash_profile zshrc gitconfig aliases"
 dir=~/dotfiles
 
 for file in $files; do

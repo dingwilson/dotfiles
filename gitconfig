@@ -1,3 +1,8 @@
 [user]
   name = "Wilson Ding"
   email = "shodai100@gmail.com"
+[filter "lfs"]
+	process = git-lfs filter-process
+	required = true
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
