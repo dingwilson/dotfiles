@@ -3,7 +3,7 @@
 echo "Setting up your Mac..."
 
 # Moving dotfiles into ~
-files="bash_profile zshrc gitconfig aliases"
+files="bash_profile zshrc gitconfig aliases gitignore"
 dir=~/dotfiles
 
 for file in $files; do
@@ -11,9 +11,14 @@ for file in $files; do
     ln -s $dir/$file ~/.$file
 done
 
+# Set ~/.gitignore as global .gitignore
+git config --global core.excludesfile ~/.gitignore
+echo "Set up your global .gitignore at ~/.gitignore"
+
 # Check for Homebrew and install if we don't have it
 if test ! $(which brew); then
   ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+  echo "Installed Homebrew"
 fi
 
 # Update Homebrew recipes
