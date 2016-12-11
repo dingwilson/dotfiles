@@ -29,6 +29,10 @@ createGithubRepo() {
 
 alias ghc=createGithubRepo
 
+# IP Address Aliases
+alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
+alias localip="ipconfig getifaddr en0"
+
 # CD Aliases
 alias cdsd="cd '/Volumes/ExtDrive SD'"
 alias cdhd="cd '/Volumes/Macintosh HD'"
@@ -45,7 +49,10 @@ alias showfiles="defaults write com.apple.finder AppleShowAllFiles -bool true &&
 alias hidefiles="defaults write com.apple.finder AppleShowAllFiles -bool false && killall Finder"
 
 # XCode Remove Derived Data
-alias xcdd='rm -rf ~/Library/Developer/Xcode/DerivedData/*'
+alias xcdd="rm -rf ~/Library/Developer/Xcode/DerivedData/*"
 
 # Recursively delete `.DS_Store` files
-alias cleanup="find . -type f -name '*.DS_Store' -ls -delete"
+# Also empty out the trash on all mounted volumes and the main HDD
+# Also clear Apple's System Logs
+# Finally clear download history from quarantine
+alias cleanup="find . -type f -name '*.DS_Store' -ls -delete; sudo rm -rfv /Volumes/*/.Trashes; sudo rm -rfv ~/.Trash; sudo rm -rfv /private/var/log/asl/*.asl; sqlite3 ~/Library/Preferences/com.apple.LaunchServices.QuarantineEventsV* 'delete from LSQuarantineEvent'"
