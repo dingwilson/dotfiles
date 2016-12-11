@@ -1,3 +1,3 @@
 # dotfiles
 
-This repository is a backup of my various system dotfiles.
+This repository is a backup of my various system dotfiles. To run, use install.sh
