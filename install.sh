@@ -34,6 +34,9 @@ brew bundle
 # Install Oh-My-Zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
+# Make ZSH the default shell environment
+chsh -s $(which zsh)
+
 # Updating all ruby gems
 ech "Updating all gems.."
 sudo gem update
