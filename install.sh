@@ -38,7 +38,7 @@ if ! xcode-select --print-path &> /dev/null; then
 fi
 
 # Moving dotfiles into ~
-files="bash_profile zshrc gitconfig aliases gitignore"
+files="bash_profile zshrc vimrc gitconfig aliases gitignore"
 dir=~/dotfiles
 
 for file in $files; do
