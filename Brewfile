@@ -14,6 +14,7 @@ brew 'git-lfs'
 brew 'python'
 brew 'vim'
 brew 'zsh'
+brew 'cocoapods'
 
 # Apps
 cask '1password'
