@@ -56,6 +56,9 @@ if test ! $(which brew); then
   echo "Installed Homebrew"
 fi
 
+# Turn off Homebrew Analytics
+brew analytics off
+
 # Update Homebrew recipes
 echo "Updating Homebrew."
 brew update
