@@ -85,4 +85,4 @@ sudo gem install cocoapods
 
 # Setup Various MacOS preferences
 echo "Setting Up Various MacOS Preferences..."
-source .macos
+source macos/.macos
