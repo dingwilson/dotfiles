@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/usr/bin/env bash
 
 echo "Setting up your Mac..."
 
@@ -43,7 +43,7 @@ dir=~/dotfiles
 
 for file in $files; do
     echo "Creating symlink to $file in home directory."
-    ln -s $dir/$file ~/.$file
+    ln -s $dir/dotfiles/$file ~/.$file
 done
 
 # Set ~/.gitignore as global .gitignore
