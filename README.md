@@ -8,6 +8,8 @@ This repository is a backup of my various system dotfiles.
 
 ### Using Git and the install script
 
+Make sure you that you are in your root directory ~/, so that you will clone the repo to ~/dotfiles/
+
 ```bash
 git clone https://github.com/dingwilson/dotfiles.git && cd dotfiles && sh install.sh
 ```
