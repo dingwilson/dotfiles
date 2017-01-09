@@ -35,3 +35,6 @@ set expandtab
 
 " Enable intelligent tabbing and spacing for indentation and alignment
 set smarttab
+
+" Fix backspace
+set backspace=indent,eol,start
