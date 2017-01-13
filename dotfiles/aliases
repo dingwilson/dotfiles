@@ -44,6 +44,9 @@ alias gh="open https://github.com/dingwilson"
 # Homebrew Aliases
 alias bu="brew update && brew upgrade && brew cleanup"
 
+# Update Alias
+alias update="sudo gem update&&bu"
+
 # Show/hide hidden files in Finder
 alias showfiles="defaults write com.apple.finder AppleShowAllFiles -bool true && killall Finder"
 alias hidefiles="defaults write com.apple.finder AppleShowAllFiles -bool false && killall Finder"
