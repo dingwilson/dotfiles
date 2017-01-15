@@ -2,13 +2,15 @@
 alias vi="vim"
 
 # Git Aliases
+alias gs="git status"
 alias gi="git init"
-alias ga="git add ."
-alias gac="git add .&&git commit -m"
+alias ga="git add -A"
+alias gac="git add -A&&git commit -m"
 alias gc="git commit -m"
 alias gpush="git push origin"
 alias gpull="git pull origin"
 alias grao="git remote add origin"
+alias grebase="git rebase -i HEAD~"
 alias goops="git fetch --all&&git reset --hard origin/master"
 
 createGithubRepo() {
