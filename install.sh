@@ -79,9 +79,11 @@ chsh -s $(which zsh)
 ech "Updating all gems.."
 sudo gem update
 
-# Install Cocoapods
-echo "Installing Cocoapods."
-sudo gem install cocoapods
+# Check for Cocoapods and install if we don't have it
+if test ! $(which pod); then
+  echo "Installing Cocoapods."
+  sudo gem install cocoapods
+fi
 
 # Setup Various MacOS preferences
 echo "Setting Up Various MacOS Preferences..."
