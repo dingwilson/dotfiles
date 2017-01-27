@@ -44,7 +44,7 @@ alias fb="open https://www.facebook.com"
 alias gh="open https://github.com/dingwilson"
 
 # Homebrew Aliases
-alias bu="brew update && brew upgrade && brew cleanup"
+alias bu="brew update && brew upgrade && brew cleanup && brew prune -f"
 
 # Update Alias
 alias update="sudo gem update&&bu"
