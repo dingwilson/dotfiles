@@ -58,9 +58,3 @@ alias xcdd="rm -rf ~/Library/Developer/Xcode/DerivedData/*"
 
 # Recursively delete `.DS_Store` files
 alias cleanup="find . -type f -name '*.DS_Store' -ls -delete"
-
-# Weather Alias - Pass in a city or zipcode
-weather() { curl wttr.in/"$1"; }
-
-### Re-run the last command as root.
-alias pls="fc -l -1 | cut -d' ' -f2- | xargs sudo"
