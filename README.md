@@ -11,5 +11,7 @@ This repository is a backup of my various system dotfiles.
 Make sure you that you are in your root directory ~/, so that you will clone the repo to ~/dotfiles/
 
 ```bash
-git clone https://github.com/dingwilson/dotfiles.git && cd dotfiles && sh install.sh
+git clone https://github.com/dingwilson/dotfiles.git && cd dotfiles 
 ```
+
+Then either run fresh_install.sh or install.sh depending on your needs.
