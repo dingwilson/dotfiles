@@ -1,7 +1,5 @@
 #!/usr/bin/env bash
 
-echo "Setting up your Mac..."
-
 # XCode Command Line Tools
 
 if ! xcode-select --print-path &> /dev/null; then
@@ -46,53 +44,8 @@ echo 'Copying public key to clipboard. Paste it into your Github account...'
   [[ -f $pub ]] && cat $pub | pbcopy
   open 'https://github.com/account/ssh'
 
-# Moving dotfiles into ~
-files="bash_profile zshrc vimrc gitconfig aliases gitignore"
-dir=~/dotfiles
-
-for file in $files; do
-    echo "Creating symlink to $file in home directory."
-    ln -s $dir/dotfiles/$file ~/.$file
-done
-
-# Set ~/.gitignore as global .gitignore
-git config --global core.excludesfile ~/.gitignore
-echo "Set up your global .gitignore at ~/.gitignore"
-
-# Check for Homebrew and install if we don't have it
-if test ! $(which brew); then
-  ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-  echo "Installed Homebrew"
-fi
-
-# Turn off Homebrew Analytics
-brew analytics off
-
-# Update Homebrew recipes
-echo "Updating Homebrew."
-brew update
-
-# Install all our dependencies with bundle (See Brewfile)
-echo "Tapping Homebrew Bundle"
-brew tap homebrew/bundle
-echo "Brewing bundle."
-brew bundle
-
-# Install Oh-My-Zsh
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
-
-# Make ZSH the default shell environment
-chsh -s $(which zsh)
-
-# Updating all ruby gems
-ech "Updating all gems.."
-sudo gem update
-
-# Check for Cocoapods and install if we don't have it
-if test ! $(which pod); then
-  echo "Installing Cocoapods."
-  sudo gem install cocoapods
-fi
+# Run symlinking
+source install.sh
 
 # Setup Various MacOS preferences
 echo "Setting Up Various MacOS Preferences..."

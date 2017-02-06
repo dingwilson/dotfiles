@@ -10,7 +10,6 @@ brew 'coreutils'
 # Install various binaries
 brew 'bash'
 brew 'git'
-brew 'git-lfs'
 brew 'python'
 brew 'vim'
 brew 'zsh'

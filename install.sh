@@ -1,42 +1,5 @@
 #!/usr/bin/env bash
 
-echo "Setting up your Mac..."
-
-# XCode Command Line Tools
-
-if ! xcode-select --print-path &> /dev/null; then
-
-  # Prompt user to install the XCode Command Line Tools
-  xcode-select --install &> /dev/null
-
-  # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-
-  # Wait until the XCode Command Line Tools are installed
-  until xcode-select --print-path &> /dev/null; do
-    sleep 5
-  done
-
-  print_result $? 'Install XCode Command Line Tools'
-
-  # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-
-  # Point the `xcode-select` developer directory to
-  # the appropriate directory from within `Xcode.app`
-  # https://github.com/alrra/dotfiles/issues/13
-
-  sudo xcode-select -switch /Applications/Xcode.app/Contents/Developer
-  print_result $? 'Make "xcode-select" developer directory point to Xcode'
-
-  # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-
-  # Prompt user to agree to the terms of the Xcode license
-  # https://github.com/alrra/dotfiles/issues/10
-
-  sudo xcodebuild -license
-  print_result $? 'Agree with the XCode Command Line Tools licence'
-
-fi
-
 # Moving dotfiles into ~
 files="bash_profile zshrc vimrc gitconfig aliases gitignore"
 dir=~/dotfiles
@@ -57,6 +20,7 @@ if test ! $(which brew); then
 fi
 
 # Turn off Homebrew Analytics
+echo "Turning off Homebrew Analytics/Tracking"
 brew analytics off
 
 # Update Homebrew recipes
@@ -70,13 +34,15 @@ echo "Brewing bundle."
 brew bundle
 
 # Install Oh-My-Zsh
+echo "Installing Oh-My-Zsh"
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
 # Make ZSH the default shell environment
+echo "Switching to Zsh as Default Shell Environment"
 chsh -s $(which zsh)
 
 # Updating all ruby gems
-ech "Updating all gems.."
+echo "Updating all gems.."
 sudo gem update
 
 # Check for Cocoapods and install if we don't have it
@@ -84,7 +50,3 @@ if test ! $(which pod); then
   echo "Installing Cocoapods."
   sudo gem install cocoapods
 fi
-
-# Setup Various MacOS preferences
-echo "Setting Up Various MacOS Preferences..."
-source macos/.macos
