@@ -14,4 +14,4 @@ Make sure you that you are in your root directory ~/, so that you will clone the
 git clone https://github.com/dingwilson/dotfiles.git && cd dotfiles 
 ```
 
-Then either run fresh_install.sh or install.sh depending on your needs.
+Then either run `fresh_install.sh` or `install.sh` depending on your needs.
