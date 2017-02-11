@@ -1,4 +1,7 @@
-#Replace Vi with Vim
+# Allow me to sudo my aliases
+alias sudo="sudo "
+
+# Replace Vi with Vim
 alias vi="vim"
 
 # Git Aliases
