@@ -18,13 +18,8 @@ alias goops="git fetch --all&&git reset --hard origin/master"
 
 createGithubRepo() {
 	CURRENTDIR=${PWD##*/}
-	GITHUBUSER=$(git config github.user)
-
-	read "REPONAME?New repo name (enter for ${PWD##*/}):"
-	read "USER?Git Username (enter for ${GITHUBUSER}):"
-	read "DESCRIPTION?Repo Description:"
-	read "PRIVATE?Private Repository?(true/false):"
-
+	GITHUBUSER="dingwilson"
+    USER="dingwilson"
 	echo "Creating Github Repository..."
 
 	curl -u ${USER:-${GITHUBUSER}} https://api.github.com/user/repos -d "{\"name\": \"${REPONAME:-${CURRENTDIR}}\", \"description\": \"${DESCRIPTION}\", \"private\": \"${PRIVATE}\"}"
