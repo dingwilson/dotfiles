@@ -47,3 +47,5 @@ echo -en $GREEN'`·.,¸,.·*`'
 echo -e $RESET$BOLD'|:::( ◕ᴥ◕ )'$RESET'  | | | | |    [__  |  | |\ |    |  \ | |\ | | __ '
 echo -en $CYAN'`·.,¸,.·*`'
 echo -e $RESET$BOLD'u-u━━-u--u'$RESET'   |_|_| | |___ ___] |__| | \|    |__/ | | \| |__] '
+
+export PATH="$HOME/.yarn/bin:$PATH"
