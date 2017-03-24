@@ -50,3 +50,6 @@ if test ! $(which pod); then
   echo "Installing Cocoapods..."
   sudo gem install cocoapods
 fi
+
+# Install Yarn
+curl -o- -L https://yarnpkg.com/install.sh | bash
