@@ -38,3 +38,19 @@ set smarttab
 
 " Fix backspace
 set backspace=indent,eol,start
+
+" redraw only when we need to.
+set lazyredraw
+
+" highlight matching [{()}]
+set showmatch
+
+" search as characters are entered
+set incsearch
+
+" highlight matches
+set hlsearch
+
+" move vertically by visual line
+nnoremap j gj
+nnoremap k gk
