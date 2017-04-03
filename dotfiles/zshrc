@@ -1,5 +1,5 @@
 # If you come from bash you might have to change your $PATH.
-export PATH=$HOME/bin:/usr/local/bin:$PATH
+export PATH=$HOME/bin:/usr/local/bin:/.yarn/bin:$PATH
 
 # Path to your oh-my-zsh installation.
 export ZSH=/Users/wilson/.oh-my-zsh
@@ -30,22 +30,3 @@ export SSH_KEY_PATH="~/.ssh/id_rsa"
 if [ -f ~/.aliases ]; then
     source ~/.aliases
 fi
-
-RED="$(tput setaf 1)"
-GREEN="$(tput setaf 2)"
-YELLOW="$(tput setaf 3)"
-CYAN="$(tput setaf 6)"
-WHITE="$(tput setaf 7)"
-BOLD="$(tput bold)"
-RESET="$(tput sgr0)"
-
-echo -en $RED'`·.,¸,.·*`'
-echo -e $RESET$BOLD'╭━━━━━━╮'$RESET
-echo -en $YELLOW'`·.,¸,.·*`'
-echo -e $RESET$BOLD'|::: /\_/\\'$RESET'   _ _ _ _ _    ____ ____ _  _    ___  _ _  _ ____ '
-echo -en $GREEN'`·.,¸,.·*`'
-echo -e $RESET$BOLD'|:::( ◕ᴥ◕ )'$RESET'  | | | | |    [__  |  | |\ |    |  \ | |\ | | __ '
-echo -en $CYAN'`·.,¸,.·*`'
-echo -e $RESET$BOLD'u-u━━-u--u'$RESET'   |_|_| | |___ ___] |__| | \|    |__/ | | \| |__] '
-
-export PATH="$HOME/.yarn/bin:$PATH"
