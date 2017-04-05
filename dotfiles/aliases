@@ -4,6 +4,10 @@ alias sudo="sudo "
 # Replace Vi with Vim
 alias vi="vim"
 
+# Default python/pip 3 instead of 2.7
+alias python="python3"
+alias pip="pip3"
+
 # Git Aliases
 alias gs="git status"
 alias gi="git init"
