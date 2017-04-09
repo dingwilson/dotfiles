@@ -48,10 +48,10 @@ alias gh="open https://github.com/dingwilson"
 alias hn="open https://news.ycombinator.com"
 
 # Homebrew Aliases
-alias bu="brew update && brew upgrade && brew cleanup && brew prune -f"
+alias bu="brew doctor && brew update && brew upgrade && brew cleanup && brew prune -f"
 
 # Update Alias
-alias update="sudo gem update&&bu"
+alias update="sudo gem update && bu"
 
 # Show/hide hidden files in Finder
 alias showfiles="defaults write com.apple.finder AppleShowAllFiles -bool true && killall Finder"
