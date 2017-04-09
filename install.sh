@@ -1,12 +1,35 @@
 #!/usr/bin/env bash
 
-# Moving dotfiles into ~
-files="bash_profile zshrc vimrc gitconfig aliases gitignore"
-dir=~/dotfiles
+files="aliases"
+dir=~/dotfiles/etc
 
 for file in $files; do
-    echo "Creating symlink to $file in home directory..."
-    ln -s $dir/dotfiles/$file ~/.$file
+    echo "Creating symlink to $file in home directory from $dir ..."
+    ln -s $dir/$file ~/.$file
+done
+
+files="gitconfig gitignore"
+dir=~/dotfiles/git
+
+for file in $files; do
+    echo "Creating symlink to $file in home directory from $dir ..."
+    ln -s $dir/$file ~/.$file
+done
+
+files="vimrc"
+dir=~/dotfiles/vim
+
+for file in $files; do
+    echo "Creating symlink to $file in home directory from $dir ..."
+    ln -s $dir/$file ~/.$file
+done
+
+files="zshrc"
+dir=~/dotfiles/zsh
+
+for file in $files; do
+    echo "Creating symlink to $file in home directory from $dir ..."
+    ln -s $dir/$file ~/.$file
 done
 
 # Set ~/.gitignore as global .gitignore
