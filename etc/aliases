@@ -17,7 +17,7 @@ alias gc="git commit -m"
 alias gpush="git push origin"
 alias gpull="git pull origin"
 alias grao="git remote add origin"
-alias grebase="git rebase -i HEAD~"
+alias grebase="git rebase -i"
 alias goops="git fetch --all&&git reset --hard origin/master"
 
 createGithubRepo() {
