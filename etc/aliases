@@ -47,11 +47,11 @@ alias msg="open https://www.messenger.com"
 alias gh="open https://github.com/dingwilson"
 alias hn="open https://news.ycombinator.com"
 
-# Homebrew Aliases
-alias bu="brew doctor && brew update && brew upgrade && brew cleanup && brew prune -f"
+# Homebrew Update Aliases
+alias bu=""
 
 # Update Alias
-alias update="sudo gem update && bu"
+alias update="sudo gem update; sudo gem cleanup; brew update; brew upgrade; brew cleanup; brew prune -f"
 
 # Show/hide hidden files in Finder
 alias showfiles="defaults write com.apple.finder AppleShowAllFiles -bool true && killall Finder"
@@ -60,5 +60,13 @@ alias hidefiles="defaults write com.apple.finder AppleShowAllFiles -bool false &
 # XCode Remove Derived Data
 alias xcdd="rm -rf ~/Library/Developer/Xcode/DerivedData/*"
 
+# Empty Trash
+alias trash="sudo rm -rfv /Volumes/*/.Trashes; sudo rm -rfv ~/.Trash; sudo rm -rfv /private/var/log/asl/*.asl; sqlite3 ~/Library/Preferences/com.apple.LaunchServices.QuarantineEventsV* 'delete from LSQuarantineEvent'"
+
 # Recursively delete `.DS_Store` files
 alias clean="find . -type f -name '*.DS_Store' -ls -delete"
+
+# Misc Letters
+alias c="clear"
+alias l="ls -ltr"
+alias x="exit"
