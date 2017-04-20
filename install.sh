@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-files="aliases"
+files="aliases hushlogin"
 dir=~/dotfiles/etc
 
 for file in $files; do
