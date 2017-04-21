@@ -47,9 +47,6 @@ alias msg="open https://www.messenger.com"
 alias gh="open https://github.com/dingwilson"
 alias hn="open https://news.ycombinator.com"
 
-# Homebrew Update Aliases
-alias bu=""
-
 # Update Alias
 alias update="sudo gem update; sudo gem cleanup; brew update; brew upgrade; brew cleanup; brew prune -f"
 
