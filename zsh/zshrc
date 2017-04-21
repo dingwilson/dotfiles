@@ -7,6 +7,12 @@ export ZSH=/Users/wilson/.oh-my-zsh
 # adding yarn to PATH
 export PATH="$HOME/.yarn/bin:$PATH"
 
+# adding Go to PATH
+export GOPATH="/Volumes/ExtDrive SD/Programming Storage/Go"
+export GOROOT=/usr/local/opt/go/libexec
+export PATH=$PATH:$GOPATH/bin
+export PATH=$PATH:$GOROOT/bin
+
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
