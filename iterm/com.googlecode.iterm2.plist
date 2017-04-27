@@ -22,6 +22,8 @@
 	<false/>
 	<key>HideScrollbar</key>
 	<false/>
+	<key>HideTab</key>
+	<true/>
 	<key>LoadPrefsFromCustomFolder</key>
 	<true/>
 	<key>NSFontPanelAttributes</key>
@@ -73,7 +75,7 @@
 	<key>NSWindow Frame SharedPreferences</key>
 	<string>1 231 796 473 0 0 1280 778 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>648 175 570 452 0 0 1280 778 </string>
+	<string>606 92 570 452 0 0 1280 778 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>-1880 584 570 452 -1920 0 1920 1058 </string>
 	<key>NSWindow Frame iTerm Window 2</key>
@@ -795,7 +797,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2017-04-18T19:19:16Z</date>
+	<date>2017-04-27T18:37:51Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>ShowBookmarkName</key>
@@ -807,7 +809,7 @@
 	<key>SwitchPaneModifier</key>
 	<integer>5</integer>
 	<key>TabStyle</key>
-	<integer>0</integer>
+	<integer>1</integer>
 	<key>TabViewType</key>
 	<integer>0</integer>
 	<key>ToolbeltTools</key>
