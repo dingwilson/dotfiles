@@ -73,9 +73,9 @@
 	<key>NSWindow Frame SUUpdateAlert</key>
 	<string>330 298 620 392 0 0 1280 778 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>1 231 796 473 0 0 1280 778 </string>
+	<string>-3280 398 796 473 -3840 0 1920 1058 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>606 92 570 452 0 0 1280 778 </string>
+	<string>-3532 86 570 452 -3840 0 1920 1058 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>-1880 584 570 452 -1920 0 1920 1058 </string>
 	<key>NSWindow Frame iTerm Window 2</key>
@@ -282,12 +282,16 @@
 			<string></string>
 			<key>Cursor Color</key>
 			<dict>
+				<key>Alpha Component</key>
+				<real>1</real>
 				<key>Blue Component</key>
-				<string>1</string>
+				<real>0.99999129772186279</real>
+				<key>Color Space</key>
+				<string>Calibrated</string>
 				<key>Green Component</key>
-				<string>1</string>
+				<real>0.99997437000274658</real>
 				<key>Red Component</key>
-				<string>1</string>
+				<real>1</real>
 			</dict>
 			<key>Cursor Guide Color</key>
 			<dict>
@@ -314,7 +318,7 @@
 			<key>Custom Command</key>
 			<string>No</string>
 			<key>Custom Directory</key>
-			<string>No</string>
+			<string>Recycle</string>
 			<key>Default Bookmark</key>
 			<string>No</string>
 			<key>Description</key>
@@ -797,7 +801,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2017-04-27T18:37:51Z</date>
+	<date>2017-05-08T17:27:07Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>ShowBookmarkName</key>
