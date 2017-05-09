@@ -43,6 +43,9 @@ alias localip="ipconfig getifaddr en0"
 alias cdsd="cd '/Volumes/ExtDrive SD'"
 alias cdhd="cd '/Volumes/Macintosh HD'"
 
+# Remount SD Slot
+alias remountsd="sudo kextunload /System/Library/Extensions/AppleStorageDrivers.kext/Contents/PlugIns/AppleUSBCardReader.kext; sudo kextload /System/Library/Extensions/AppleStorageDrivers.kext/Contents/PlugIns/AppleUSBCardReader.kext"
+
 # Website Aliases
 alias fb="open https://www.facebook.com"
 alias msg="open https://www.messenger.com"
