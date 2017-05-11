@@ -73,9 +73,9 @@
 	<key>NSWindow Frame SUUpdateAlert</key>
 	<string>330 298 620 392 0 0 1280 778 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>-3280 398 796 473 -3840 0 1920 1058 </string>
+	<string>-1346 412 918 381 -1920 0 1920 1058 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>-3532 86 570 452 -3840 0 1920 1058 </string>
+	<string>-1436 426 570 452 -1920 0 1920 1058 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>-1880 584 570 452 -1920 0 1920 1058 </string>
 	<key>NSWindow Frame iTerm Window 2</key>
@@ -125,12 +125,16 @@
 			</dict>
 			<key>Ansi 12 Color</key>
 			<dict>
+				<key>Alpha Component</key>
+				<real>1</real>
 				<key>Blue Component</key>
-				<string>0.8117647</string>
+				<real>0.99866127967834473</real>
+				<key>Color Space</key>
+				<string>Calibrated</string>
 				<key>Green Component</key>
-				<string>0.6235294</string>
+				<real>0.71045577526092529</real>
 				<key>Red Component</key>
-				<string>0.4470588</string>
+				<real>0.08856288343667984</real>
 			</dict>
 			<key>Ansi 13 Color</key>
 			<dict>
@@ -143,12 +147,16 @@
 			</dict>
 			<key>Ansi 14 Color</key>
 			<dict>
+				<key>Alpha Component</key>
+				<real>1</real>
 				<key>Blue Component</key>
-				<string>0.8862745</string>
+				<real>0.99910098314285278</real>
+				<key>Color Space</key>
+				<string>Calibrated</string>
 				<key>Green Component</key>
-				<string>0.8862745</string>
+				<real>0.92557823657989502</real>
 				<key>Red Component</key>
-				<string>0.2039216</string>
+				<real>0.40229624509811401</real>
 			</dict>
 			<key>Ansi 15 Color</key>
 			<dict>
@@ -262,7 +270,7 @@
 			<key>Blur</key>
 			<true/>
 			<key>Blur Radius</key>
-			<real>5.9800781249999915</real>
+			<real>12.461268028846145</real>
 			<key>Bold Color</key>
 			<dict>
 				<key>Blue Component</key>
@@ -280,18 +288,16 @@
 			<integer>80</integer>
 			<key>Command</key>
 			<string></string>
+			<key>Cursor Boost</key>
+			<real>0.0</real>
 			<key>Cursor Color</key>
 			<dict>
-				<key>Alpha Component</key>
-				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.99999129772186279</real>
-				<key>Color Space</key>
-				<string>Calibrated</string>
+				<string>1</string>
 				<key>Green Component</key>
-				<real>0.99997437000274658</real>
+				<string>1</string>
 				<key>Red Component</key>
-				<real>1</real>
+				<string>1</string>
 			</dict>
 			<key>Cursor Guide Color</key>
 			<dict>
@@ -315,6 +321,8 @@
 				<key>Red Component</key>
 				<string>0</string>
 			</dict>
+			<key>Cursor Type</key>
+			<integer>2</integer>
 			<key>Custom Command</key>
 			<string>No</string>
 			<key>Custom Directory</key>
@@ -658,7 +666,7 @@
 			<key>Normal Font</key>
 			<string>Monaco 12</string>
 			<key>Only The Default BG Color Uses Transparency</key>
-			<false/>
+			<true/>
 			<key>Option Key Sends</key>
 			<integer>0</integer>
 			<key>Prompt Before Closing 2</key>
@@ -702,7 +710,7 @@
 			<key>Terminal Type</key>
 			<string>xterm-256color</string>
 			<key>Transparency</key>
-			<real>0.33338110207100596</real>
+			<real>0.39227302144970416</real>
 			<key>Unlimited Scrollback</key>
 			<false/>
 			<key>Use Bold Font</key>
@@ -801,7 +809,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2017-05-08T17:27:07Z</date>
+	<date>2017-05-11T15:40:17Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>ShowBookmarkName</key>
