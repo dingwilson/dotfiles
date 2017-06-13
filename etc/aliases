@@ -21,6 +21,7 @@ alias grebase="git rebase -i"
 alias goops="git fetch --all&&git reset --hard origin/master"
 alias gbranch="git checkout -b"
 alias gmerge="git checkout master&&git merge"
+alias gclone="git clone"
 
 createGithubRepo() {
 	CURRENTDIR=${PWD##*/}
