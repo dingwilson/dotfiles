@@ -10,6 +10,7 @@ alias pip="pip3"
 
 # Git Aliases
 alias gs="git status"
+alias gd="git diff"
 alias gi="git init"
 alias ga="git add -A"
 alias gac="git add -A&&git commit -m"
