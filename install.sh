@@ -67,12 +67,3 @@ chsh -s $(which zsh)
 # Updating all ruby gems
 echo "Updating all gems..."
 sudo gem update
-
-# Check for Cocoapods and install if we don't have it
-if test ! $(which pod); then
-  echo "Installing Cocoapods..."
-  sudo gem install cocoapods
-fi
-
-# Install Yarn
-curl -o- -L https://yarnpkg.com/install.sh | bash
