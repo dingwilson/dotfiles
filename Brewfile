@@ -31,7 +31,6 @@ brew 'zsh'
 # Apps
 cask '1password'
 cask 'caffeine'
-cask 'colorpicker'
 cask 'dropbox'
 cask 'google-chrome'
 cask 'iterm2'
