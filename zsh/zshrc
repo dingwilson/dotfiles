@@ -4,6 +4,9 @@ export PATH=$HOME/bin:/usr/local/bin:$PATH
 # Path to your oh-my-zsh installation.
 export ZSH=/Users/wilson/.oh-my-zsh
 
+# adding installed Ruby gems to PATH
+export PATH=$PATH:/usr/local/Cellar/ruby/2.4.2_1/bin
+
 # adding Go to PATH
 export GOPATH="$HOME/Go"
 export GOROOT=/usr/local/opt/go/libexec
