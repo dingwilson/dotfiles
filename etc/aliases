@@ -9,6 +9,7 @@ alias python="python3"
 alias pip="pip3"
 
 # Git Aliases
+alias gh="open https://github.com/dingwilson"
 alias gs="git status"
 alias gd="git diff"
 alias gi="git init"
@@ -18,6 +19,7 @@ alias gc="git commit -m"
 alias gpush="git push origin"
 alias gpull="git pull origin"
 alias grao="git remote add origin"
+alias grso="git remote set-url origin"
 alias grebase="git rebase -i"
 alias goops="git fetch --all&&git reset --hard origin/master"
 alias gbranch="git checkout -b"
@@ -28,9 +30,8 @@ createGithubRepo() {
 	CURRENTDIR=${PWD##*/}
 	GITHUBUSER="dingwilson"
     USER="dingwilson"
-	echo "Creating Github Repository..."
 
-	curl -u ${USER:-${GITHUBUSER}} https://api.github.com/user/repos -d "{\"name\": \"${REPONAME:-${CURRENTDIR}}\", \"description\": \"${DESCRIPTION}\", \"private\": \"${PRIVATE}\"}"
+	curl -u ${USER:-${GITHUBUSER}} https://api.github.com/user/repos -d "{\"name\": \"${REPONAME:-${CURRENTDIR}}\", \"description\": \"${DESCRIPTION}\", \"private\": \"true\"}"
 
 	git remote add origin git@github.com:${USER:-${GITHUBUSER}}/${REPONAME:-${CURRENTDIR}}.git
 }
@@ -48,13 +49,7 @@ alias cdhd="cd '/Volumes/Macintosh HD'"
 # Remount SD Slot
 alias remountsd="sudo kextunload /System/Library/Extensions/AppleStorageDrivers.kext/Contents/PlugIns/AppleUSBCardReader.kext; sudo kextload /System/Library/Extensions/AppleStorageDrivers.kext/Contents/PlugIns/AppleUSBCardReader.kext"
 
-# Website Aliases
-alias fb="open https://www.facebook.com"
-alias msg="open https://www.messenger.com"
-alias gh="open https://github.com/dingwilson"
-alias hn="open https://news.ycombinator.com"
-
-# Update Alias
+# Update Everything
 alias update="sudo gem update; sudo gem cleanup; brew update; brew upgrade; brew cleanup; brew prune -f"
 
 # Show/hide hidden files in Finder
