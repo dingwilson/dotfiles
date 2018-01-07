@@ -21,7 +21,6 @@ alias gpull="git pull origin"
 alias grao="git remote add origin"
 alias grso="git remote set-url origin"
 alias grebase="git rebase -i"
-alias goops="git fetch --all&&git reset --hard origin/master"
 alias gbranch="git checkout -b"
 alias gmerge="git checkout master&&git merge"
 alias gclone="git clone"
@@ -64,8 +63,3 @@ alias trash="sudo rm -rfv /Volumes/*/.Trashes; sudo rm -rfv ~/.Trash; sudo rm -r
 
 # Recursively delete `.DS_Store` files
 alias clean="find . -type f -name '*.DS_Store' -ls -delete"
-
-# Misc Letters
-alias c="clear"
-alias l="ls -ltr"
-alias x="exit"
