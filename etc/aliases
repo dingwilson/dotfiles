@@ -42,7 +42,7 @@ alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
 alias localip="ipconfig getifaddr en0"
 
 # CD Aliases
-alias cdsd="cd '/Volumes/ExtDrive SD'"
+alias cdsd="cd '/Volumes/ExtDrive'"
 alias cdhd="cd '/Volumes/Macintosh HD'"
 
 # Remount SD Slot
