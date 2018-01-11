@@ -49,7 +49,7 @@ alias cdhd="cd '/Volumes/Macintosh HD'"
 alias remountsd="sudo kextunload /System/Library/Extensions/AppleStorageDrivers.kext/Contents/PlugIns/AppleUSBCardReader.kext; sudo kextload /System/Library/Extensions/AppleStorageDrivers.kext/Contents/PlugIns/AppleUSBCardReader.kext"
 
 # Update Everything
-alias update="sudo gem update; sudo gem cleanup; brew update; brew upgrade; brew cleanup; brew prune -f"
+alias update="brew update; brew upgrade; brew cleanup; brew prune -f;sudo gem update; sudo gem cleanup;"
 
 # Show/hide hidden files in Finder
 alias showfiles="defaults write com.apple.finder AppleShowAllFiles -bool true && killall Finder"
