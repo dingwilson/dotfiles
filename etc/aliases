@@ -35,6 +35,9 @@ createGithubRepo() {
 
 alias ghc=createGithubRepo
 
+# Concatenate all mp4 files in directory
+alias catmp4="ffmpeg -f concat -safe 0 -i <(for f in ./*.mp4; do echo "file '$PWD/$f'"; done) -c copy output.mp4"
+
 # IP Address Aliases
 alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
 alias localip="ipconfig getifaddr en0"
