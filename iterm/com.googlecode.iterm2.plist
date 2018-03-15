@@ -72,7 +72,7 @@
 	<key>NSWindow Frame SUUpdateAlert</key>
 	<string>330 300 620 392 0 0 1280 778 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>116 171 796 473 0 0 1280 800 </string>
+	<string>116 171 796 473 0 0 1280 778 </string>
 	<key>NSWindow Frame UKCrashReporter</key>
 	<string>80 194 592 584 0 0 1280 778 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
@@ -1484,7 +1484,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2018-03-03T22:11:56Z</date>
+	<date>2018-03-14T03:45:44Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>ShowBookmarkName</key>
@@ -1492,7 +1492,7 @@
 	<key>SmartPlacement</key>
 	<true/>
 	<key>SplitPaneDimmingAmount</key>
-	<real>0.45911959134615388</real>
+	<real>0.43773537660256423</real>
 	<key>SwitchPaneModifier</key>
 	<integer>5</integer>
 	<key>TabStyle</key>
