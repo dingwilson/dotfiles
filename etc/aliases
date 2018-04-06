@@ -24,6 +24,7 @@ alias grso="git remote set-url origin"
 alias grebase="git rebase -i"
 alias gclone="git clone"
 alias gcheckout="git checkout"
+alias gfetch="git fetch"
 
 createGithubRepo() {
 	CURRENTDIR=${PWD##*/}
