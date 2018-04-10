@@ -50,6 +50,8 @@ alias localip="ipconfig getifaddr en0"
 
 # CD Aliases
 alias cdsd="cd '/Volumes/ExtDrive'"
+alias cdhw="cd '/Volumes/ExtDrive/School'"
+alias cdps="cd '/Volumes/ExtDrive/programming_storage'"
 alias cdhd="cd '/Volumes/Macintosh HD'"
 
 # Remount SD Slot
