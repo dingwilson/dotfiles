@@ -27,6 +27,7 @@ brew 'python3'
 brew 'ruby'
 brew 'vim', args: ['with-python3', 'without-python']
 brew 'wget'
+brew 'youtube-dl'
 brew 'zsh'
 
 # Apps
