@@ -46,6 +46,12 @@ concatenateVideosWithFFMPEG() {
 alias catmp4=concatenateVideosWithFFMPEG
 alias dlmp3="youtube-dl --extract-audio --audio-format mp3 --audio-quality 0"
 
+# Grep History
+alias hs='history | grep'
+
+# mkdir and cd
+alias mkcd='mkdircd(){ mkdir -p "$1"; cd "$1" }; mkdircd'
+
 # IP Address Aliases
 alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
 alias localip="ipconfig getifaddr en0"
