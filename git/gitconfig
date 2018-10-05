@@ -5,9 +5,11 @@
 [core]
 	excludesfile = /Users/wilson/.gitignore
 [gpg]
-	program = gpg2
+	program = gpg
 [filter "lfs"]
 	smudge = git-lfs smudge -- %f
 	process = git-lfs filter-process
 	required = true
 	clean = git-lfs clean -- %f
+[commit]
+	gpgSign = true
