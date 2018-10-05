@@ -57,15 +57,6 @@ alias mkcd='mkdircd(){ mkdir -p "$1"; cd "$1" }; mkdircd'
 alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
 alias localip="ipconfig getifaddr en0"
 
-# CD Aliases
-alias cdsd="cd '/Volumes/ExtDrive'"
-alias cdhw="cd '/Volumes/ExtDrive/School'"
-alias cdps="cd '/Volumes/ExtDrive/programming_storage'"
-alias cdhd="cd '/Volumes/Macintosh HD'"
-
-# Remount SD Slot
-alias remountsd="sudo kextunload /System/Library/Extensions/AppleStorageDrivers.kext/Contents/PlugIns/AppleUSBCardReader.kext; sudo kextload /System/Library/Extensions/AppleStorageDrivers.kext/Contents/PlugIns/AppleUSBCardReader.kext"
-
 # Update Everything
 alias update="brew update; brew upgrade; brew cleanup; brew prune -f;sudo gem update; sudo gem cleanup;"
 
