@@ -58,7 +58,7 @@ alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
 alias localip="ipconfig getifaddr en0"
 
 # Update Everything
-alias update="brew update; brew upgrade; brew cleanup; brew prune -f;sudo gem update; sudo gem cleanup;"
+alias update="brew update; brew upgrade; brew cleanup; sudo gem update; sudo gem cleanup;"
 
 # Show/hide hidden files in Finder
 alias showfiles="defaults write com.apple.finder AppleShowAllFiles -bool true && killall Finder"
