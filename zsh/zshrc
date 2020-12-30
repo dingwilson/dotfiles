@@ -12,6 +12,7 @@ export GOPATH="$HOME/Go"
 export GOROOT=/usr/local/opt/go/libexec
 export PATH=$PATH:$GOPATH/bin
 export PATH=$PATH:$GOROOT/bin
+export PATH=$PATH:$HOME/.cargo/bin
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
@@ -39,3 +40,5 @@ export SSH_KEY_PATH="~/.ssh/id_rsa"
 if [ -f ~/.aliases ]; then
     source ~/.aliases
 fi
+export PATH="/usr/local/opt/ruby/bin:$PATH"
+PATH=$PATH:/usr/local/lib/ruby/gems/2.6.0
