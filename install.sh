@@ -58,7 +58,7 @@ brew bundle
 
 # Install Oh-My-Zsh
 echo "Installing Oh-My-Zsh..."
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
 # Make ZSH the default shell environment
 echo "Switching to Zsh as Default Shell Environment..."
