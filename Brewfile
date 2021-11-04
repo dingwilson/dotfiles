@@ -1,5 +1,5 @@
 # Taps
-tap 'caskroom/cask'
+tap 'homebrew/cask'
 
 # Make sure apps get installed in system Applications dir
 cask_args appdir: '/Applications'
