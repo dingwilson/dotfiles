@@ -24,6 +24,14 @@ for file in $files; do
     ln -s $dir/$file ~/.$file
 done
 
+# Install Oh-My-Zsh
+echo "Installing Oh-My-Zsh..."
+sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+
+
+# Remove existing zshrc
+rm -rf ~/.zshrc
+
 files="zshrc"
 dir=~/dotfiles/zsh
 
@@ -55,14 +63,6 @@ echo "Tapping Homebrew Bundle..."
 brew tap homebrew/bundle
 echo "Brewing bundle..."
 brew bundle
-
-# Install Oh-My-Zsh
-echo "Installing Oh-My-Zsh..."
-sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-
-# Make ZSH the default shell environment
-echo "Switching to Zsh as Default Shell Environment..."
-chsh -s $(which zsh)
 
 # Updating all ruby gems
 echo "Updating all gems..."

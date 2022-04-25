@@ -1,15 +1,10 @@
 [user]
  	name = "Wilson Ding"
 	email = hello@wilsonding.com
-	signingkey = 02C0357C111CBD3DB8BFB562742F0E86D4D0A493
 [core]
 	excludesfile = /Users/wilson/.gitignore
-[gpg]
-	program = gpg
 [filter "lfs"]
 	smudge = git-lfs smudge -- %f
 	process = git-lfs filter-process
 	required = true
 	clean = git-lfs clean -- %f
-[commit]
-	gpgSign = true

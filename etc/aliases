@@ -8,6 +8,9 @@ alias vi="vim"
 alias python="python3"
 alias pip="pip3"
 
+# subl
+alias subl="open -a /Applications/Sublime\ Text.app"
+
 # Git Aliases
 alias gh="open https://github.com/dingwilson"
 alias gs="git status"
@@ -26,26 +29,6 @@ alias gclone="git clone"
 alias gcheck="git checkout"
 alias gcheckb="git checkout -b"
 alias gfetch="git fetch"
-
-createGithubRepo() {
-	CURRENTDIR=${PWD##*/}
-	GITHUBUSER="dingwilson"
-    USER="dingwilson"
-
-	curl -u ${USER:-${GITHUBUSER}} https://api.github.com/user/repos -d "{\"name\": \"${REPONAME:-${CURRENTDIR}}\", \"description\": \"${DESCRIPTION}\", \"private\": \"true\"}"
-
-	git remote add origin git@github.com:${USER:-${GITHUBUSER}}/${REPONAME:-${CURRENTDIR}}.git
-}
-
-alias ghc=createGithubRepo
-
-# A/V aliases
-concatenateVideosWithFFMPEG() {
-	ffmpeg -f concat -safe 0 -i <(for f in ./*.mp4; do echo "file '$PWD/$f'"; done) -c copy output.mp4
-}
-
-alias catmp4=concatenateVideosWithFFMPEG
-alias dlmp3="youtube-dl --extract-audio --audio-format mp3 --audio-quality 0"
 
 # Grep History
 alias hs='history | grep'
