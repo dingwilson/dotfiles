@@ -12,7 +12,6 @@ alias pip="pip3"
 alias subl="open -a /Applications/Sublime\ Text.app"
 
 # Git Aliases
-alias gh="open https://github.com/dingwilson"
 alias gs="git status"
 alias gd="git diff"
 alias gl="git log"
